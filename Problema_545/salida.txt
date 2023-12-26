@@ -1,0 +1,11 @@
+Coche: 1 tiempo: 20
+Coche: 2 tiempo: 16
+16
+Coche: 0 tiempo: 7
+Coche: 1 tiempo: 8
+Coche: 2 tiempo: 8
+Coche: 3 tiempo: 9
+7
+Coche: 0 tiempo: 11
+Coche: 1 tiempo: 11
+11
