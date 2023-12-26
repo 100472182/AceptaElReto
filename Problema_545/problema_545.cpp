@@ -14,8 +14,8 @@ void problema(int objetivo, std::vector<Coche> coches) {
     int tiempo_minimo = inf;
     for (int i = 0; i < coches.size(); ++i) {
         if (coches[i].tiempo >= 0) {
-            tiempo_minimo = std::min(tiempo_minimo, (objetivo / coches[i].vel) +
-                                                        coches[i].tiempo);
+            tiempo_minimo =
+                std::min(tiempo_minimo, (objetivo / coches[i].vel) + coches[i].tiempo);
         }
     }
     std::cout << tiempo_minimo << std::endl;
