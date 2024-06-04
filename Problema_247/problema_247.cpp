@@ -1,27 +1,27 @@
 #include <iostream>
 
 int main() {
-    int cantidad;
-    std::cin.tie(NULL);
     std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+
+    int cantidad;
     while (std::cin >> cantidad) {
-        bool fallo = false;
-        int actual = 0;
-        int prev = 0;
         if (cantidad == 0) {
             return 0;
         }
-        while (!fallo && cantidad > 0) {
+        int actual;
+        int prev = 0;
+        for (; cantidad > 0; --cantidad) {
             std::cin >> actual;
             if (actual <= prev) {
                 std::cout << "NO" << std::endl;
-                fallo = true;
-                std::cin.ignore(1000, '\n');
+                std::cin.ignore(800, '\n');
+                break;
             }
             prev = actual;
-            cantidad--;
         }
-        if (!fallo) {
+
+        if (cantidad == 0) {
             std::cout << "SI" << std::endl;
         }
     }
